@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteEscapes SIGNUP</title>
+    <link rel="icon" href="eliteescapes_logo.jpeg" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #070505;
+            margin: 0;
+            padding: 0;
+            background-image: url('main.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .login-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 370px;
+            padding: 50px;
+            background-color: rgba(12, 5, 5, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .login-container h2 {
+            text-align: center;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 94%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #00b318;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <center><img src="eliteescapes_logo.jpeg" height="40%" width="40%"></center>
+        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; color: #0074d9;">Hey there, traveller</h2>
+        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; color: #0074d9;">Welcome to EliteEscapes</h2>
+        <hr>
+        <form class="login-form" id="signupForm" action="main.html">
+            <input type="text" placeholder="Enter your email here" id="1" required>
+            <input type="password" placeholder="Enter your Password" id="2" required>
+            <button id="signup" type="submit">SIGN UP</button>
+        </form>
+        <hr>
+        <form class="login-form" id="signupForm">
+            <center><h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #0074d9;">Already have an account?</h3></center>
+            <button id="login" type="button" onclick="window.location.href='login.html'"> LOG IN INSTEAD</button>
+        </form>
+    </div>
+</body>
+</html>
+

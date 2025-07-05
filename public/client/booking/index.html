@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BOOKING INFORMATION</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1c92d2, #5942cb);
+      padding-top: 50px;
+    }
+    .main {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .box {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #180202;
+      border-radius: 5px;
+    }
+    #submit {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #submit:hover {
+      background-color: #28a745;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+
+      <div class="col-md-6 main">
+        <form action="/submit-booking" method="POST">
+          <center><h1>BOOKING INFORMATION</h1></center>
+
+          <!-- <input type="text" class="box" name="name" placeholder="Enter your name" required />
+          <input type="email" class="box" name="email" placeholder="Enter your email" required />
+          <input type="tel" class="box" name="phno" placeholder="Enter your phone number" pattern="[0-9]{10}" required />
+          <input type="text" class="box" name="roomtype" placeholder="Room Type" required />
+          <input type="number" class="box" name="noofdays" placeholder="Number of Days" required />
+          <input type="number" class="box" name="totalbill" placeholder="Total Amount" required />
+          <input type="text" class="box" name="cardNumber" placeholder="Credit Card Number" pattern="[0-9]{16}" required />
+          <input type="text" class="box" name="cardCVV" placeholder="CVV" pattern="[0-9]{3}" required />
+          <input type="password" class="box" name="password" placeholder="Enter password" required /> -->
+          <input type="text" class="box" name="name" placeholder="Enter your name" required />
+          <input type="email" class="box" name="email" placeholder="Enter your email" required />
+          <input type="tel" class="box" name="phno" placeholder="Enter your phone number" pattern="[0-9]{10}" required />
+
+  <!-- Predefined room type dropdown -->
+          <select class="box" name="roomtype" required>
+          <option value="" disabled selected>Select Room Type</option>
+          <option value="Standard">Standard - ₹1000/night</option>
+          <option value="Deluxe">Deluxe - ₹2000/night</option>
+          <option value="Executive">Executive - ₹3000/night</option>
+          <option value="Suite">Suite - ₹4000/night</option>
+          <option value="Presidential">Presidential - ₹5000/night</option>
+          </select>
+
+          <input type="number" class="box" name="noofdays" placeholder="Number of Days" min="1" required />
+          <center><input type="submit" id="submit" value="Submit" /></center>
+        </form>
+      </div>
+
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</body>
+</html>

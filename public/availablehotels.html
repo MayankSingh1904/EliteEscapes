@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="eliteescapes_logo.jpeg" type="image/png">
+<title>Hotel Options</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+    .hotel-card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+    }
+    .hotel-photo {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .hotel-name {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .price {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    .book-now-button {
+        background-color: #098c16;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .book-now-button:hover {
+        background-color: #b300a1;
+    }
+</style>
+</head>
+<body style="background-color: rgb(4, 4, 70);">
+    <div class="header" style="background-color: #3498db; color: #fff; padding: 20px; text-align: center;">
+        <strong style="display: block; font-size: 50px;">Hotels Available</strong>
+        <span style="font-style: normal; font-size: 1.2em;">Following are the hotels available in your desired city</span>
+    </div>
+    
+    
+    <hr>
+<br>
+<div class="container">
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/room-1.jpg" alt="Hotel 1 Photo">
+        <div class="hotel-name">Ocean Breeze Resort</div>
+        <div class="price">$12 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/hhh.jpg" alt="Hotel 2 Photo">
+        <div class="hotel-name">Mountain View Lodge</div>
+        <div class="price">$15 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <!-- Repeat the structure for the remaining hotels -->
+    <!-- Hotel 3 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/burj_al_arab_dubai-normal.jpg" alt="Hotel 1 Photo">
+        <div class="hotel-name">Sunset Paradise Inn</div>
+        <div class="price">$20 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <!-- Hotel 4 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/hh.jpg" alt="Hotel 2 Photo">
+        <div class="hotel-name">Royal Palace Hotel</div>
+        <div class="price">$22 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <!-- Hotel 5 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/about.jpg" alt="Hotel 1 Photo">
+        <div class="hotel-name">Emerald Coast Retreat</div>
+        <div class="price">$50 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <!-- Hotel 6 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/k2.jpg" alt="Hotel 2 Photo">
+        <div class="hotel-name">Tranquil Haven Resort</div>
+        <div class="price">$45 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <!-- Hotel 7 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/gallery4.jpg" alt="Hotel 1 Photo">
+        <div class="hotel-name">Golden Sands Resort</div>
+        <div class="price">$100 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <!-- Hotel 8 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/room-3.jpg" alt="Hotel 2 Photo">
+        <div class="hotel-name">Enchanted Forest Inn</div>
+        <div class="price">$11 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <!-- Hotel 9 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/room-4.jpg" alt="Hotel 1 Photo">
+        <div class="hotel-name">Lakeside Manor Hotel</div>
+        <div class="price">$75 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <!-- Hotel 10 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/room-5.jpg" alt="Hotel 2 Photo">
+        <div class="hotel-name">Starlight Plaza Hotel</div>
+        <div class="price">$60 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <!-- Hotel 11 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/room-6.jpg" alt="Hotel 1 Photo">
+        <div class="hotel-name">Serenity Cove Resort</div>
+        <div class="price">$120 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <!-- Hotel 12 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/hh.jpg" alt="Hotel 2 Photo">
+        <div class="hotel-name">Urban Oasis Hotel</div>
+        <div class="price">$110 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    <!-- Hotel 11 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/hhh.jpg" alt="Hotel 1 Photo">
+        <div class="hotel-name">Team Rocket Resort</div>
+        <div class="price">$90 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    
+    <!-- Hotel 12 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/k2.jpg" alt="Hotel 2 Photo">
+        <div class="hotel-name">LUGIA HOTEL</div>
+        <div class="price">$220 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    <!-- Hotel 11 -->
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/room-2.jpg" alt="Hotel 1 Photo">
+        <div class="hotel-name">Vampire Cove </div>
+        <div class="price">$30 per night</div>
+        <button class="book-now-button" onclick="bookNow()">Book Now</button>
+    </div>
+    <div class="hotel-card">
+        <img class="hotel-photo" src="images/k.jpg" alt="Hotel 1 Photo">
+        <div class="hotel-name">PAL ISLAND Cove </div>
+        <div class="price">$70 per night</div>
+        <button class="book-now-button"  onclick="bookNow()">Book Now</button>
+    </div>
+</div>
+<style>
+    /* Internal CSS */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 20px;
+        color: white; /* Set text color to white */
+    }
+    .hotel-card {
+        border: 10px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        background-color: #0723b0;
+
+    }
+    .hotel-photo {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+</style>  
+<script>
+    // JavaScript
+    function bookNow() {
+    window.location.href = "./client/booking/index.html";
+}
+</script>
+</body>
+</html>

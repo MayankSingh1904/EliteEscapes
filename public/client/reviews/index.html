@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form - MongoDB</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('main.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .review-form {
+            background-color: rgba(132, 125, 125, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .review-form input[type="text"]
+         {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .review-form input[type="textarea"] {
+            height: 200px;
+            width: 400px;
+            resize: none;
+            align-content: first baseline;
+        }
+
+        .review-form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .review-form input[type="submit"]:hover {
+            background-color: #00b30c;
+        }
+        header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; 
+    color: #fff;
+    z-index: 1000;
+}
+
+.nav2 {
+    padding: 10px 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+        <div class="nav2">
+           <nav>
+               <div class="container">
+                   <ul>
+                    <li><a href="">Home</a></li>
+                   </ul>
+               </div>
+           </nav>
+        </div>
+       </header> -->
+    
+    <div class="review-form">
+                <form action="/submit-review" method="POST">
+                    <h2>Write a review</h2>
+                    <label><input type="text" class="box" id="name" name="name" placeholder="Enter name of the user" required /></label>
+                    <br>
+                    <label><input type="text" class="box" id="email" name="email" placeholder="Email of the user" required /></label>
+                    <br>
+                    <label><input type="text" class="box" id="phno" name="phno" placeholder="Enter Mobile number" required /></label>
+                    <br>
+                    <center style="color: aliceblue;">REVIEW</center>
+                    <label><input type="textarea" class="box" id="review" name="review" placeholder="write your review here" required /></label>
+                    <br><br>
+                    <label><center><input type="submit" value="Submit" id="submit"/></center></label>
+                </form>
+            </div>
+    </body>
+</html>
